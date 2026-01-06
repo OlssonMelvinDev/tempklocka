@@ -31,8 +31,8 @@ sudo mkdir -p /opt/klocka-skript
 cd /opt/klocka-skript
 
 echo "⬇️ Laddar ner klocka-scriptet..."
-sudo curl -o klockakod.py https://raw.githubusercontent.com/WilliamAnderssonDev/klocka/refs/heads/main/klockakod.py
-sudo chmod +x klockakod.py
+sudo curl -o https://raw.githubusercontent.com/OlssonMelvinDev/tempklocka/refs/heads/main/klockakod_v2
+sudo chmod +x klockakod_v2.py
 
 echo "🛠️ Skapar systemd-tjänst klockaskript.service (körs som root)..."
 cat <<EOF | sudo tee /etc/systemd/system/klockaskript.service
